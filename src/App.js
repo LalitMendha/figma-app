@@ -29,13 +29,12 @@ function Figma(){
   }
 
   function onColorChange(oEvent){
-    let newObj = BGColor;
     if(oEvent.target.id === "headColor"){
-      setBGColor({...BGColor, ["headColor"]: oEvent.target.value})
+      setBGColor({...BGColor, "headColor": oEvent.target.value})
     }else if(oEvent.target.id === "bodyColor"){
-      setBGColor({...BGColor, ["bodyColor"]: oEvent.target.value})
+      setBGColor({...BGColor, "bodyColor": oEvent.target.value})
     }else{
-      setBGColor({...BGColor, ["textColor"]: oEvent.target.value})
+      setBGColor({...BGColor, "textColor": oEvent.target.value})
     }
   }
   function copyCSS(){
